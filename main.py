@@ -5,7 +5,7 @@ import numpy as np
 
 
 #importing the saved model
-model = keras.models.load_model('saved_model')
+model = keras.models.load_model('src/saved_model')
 
 if __name__ == "__main__":
     #image prepared for classification
