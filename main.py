@@ -1,6 +1,6 @@
 import keras
 import matplotlib.pyplot as plt
-from prepare_image import imageprepare
+from src.util.prepare_image import imageprepare
 import numpy as np
 
 
@@ -9,7 +9,7 @@ model = keras.models.load_model('src/saved_model')
 
 if __name__ == "__main__":
     #image prepared for classification
-    tensor_image = imageprepare('image.png')
+    tensor_image = imageprepare('example_images/image.png')
 
     classes = model.predict(tensor_image.reshape(1,28*28))
     print(classes)
