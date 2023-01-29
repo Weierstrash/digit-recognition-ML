@@ -1,6 +1,6 @@
-from digit_recognition_network import network
-from digit_recognition_network import train_images
-from digit_recognition_network import train_labels
+from src.network.digit_recognition_network import network
+from src.network.digit_recognition_network import train_images
+from src.network.digit_recognition_network import train_labels
 
 #training
 def return_trained_network(epochs):
