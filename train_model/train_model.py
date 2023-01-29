@@ -1,6 +1,6 @@
-from src.network.digit_recognition_network import network
-from src.network.digit_recognition_network import train_images
-from src.network.digit_recognition_network import train_labels
+from src.dense_network.digit_recognition_network import network
+from src.prepared_dataset.mnist_dataset import train_images
+from src.prepared_dataset.mnist_dataset import train_labels
 
 #training
 def return_trained_network(epochs):
@@ -12,7 +12,7 @@ if __name__ == "__main__":
     network = return_trained_network(epochs = 10)
 
     #saving the model
-    network.save('saved_model')
+    network.save('src/saved_model_dense')
 
 
 

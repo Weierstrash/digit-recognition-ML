@@ -1,5 +1,5 @@
-from src.network.digit_recognition_network import test_images
-from src.network.digit_recognition_network import test_labels
+from src.dense_network.digit_recognition_network import test_images
+from src.dense_network.digit_recognition_network import test_labels
 import keras
 
 #loading the saved model
