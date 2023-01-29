@@ -1,7 +1,6 @@
 from src.CNN_network.digit_recognition_cnn import model
 from src.prepared_dataset.mnist_dataset_for_cnn import train_images
 from src.prepared_dataset.mnist_dataset_for_cnn import train_labels
-import keras
 
 #compiling the model
 model.compile(optimizer = 'rmsprop',
